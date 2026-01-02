@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📌 Dev-Links
 
-## Getting Started
+> Um agregador de links personalizado para desenvolvedores — estilo cartão de visitas online — construído com **Next.js** e **TypeScript**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Sobre
+
+O **Dev-Links** é um projeto que permite criar uma página única com seus principais links (portfólio, redes sociais, repositórios, projetos, contato profissional, etc.), facilitando o compartilhamento da sua presença online.
+
+A ideia segue o conceito de “link in bio”, centralizando todos os links importantes em um único lugar.
+
+**Possíveis usos:**
+- Link principal no Instagram, LinkedIn ou WhatsApp
+- Página simples de apresentação profissional
+- Centralização de projetos e redes sociais
+
+---
+
+## 💡 Funcionalidades
+
+- ✔️ Página única com links configuráveis  
+- ✔️ Layout responsivo  
+- ✔️ Estrutura simples e objetiva  
+- ✔️ Fácil personalização  
+- ✔️ Pronto para deploy  
+
+---
+
+## 🧱 Tecnologias Utilizadas
+
+- **Next.js**
+- **React**
+- **TypeScript**
+- **CSS / Tailwind CSS**
+- **Node.js**
+
+---
+
+## 📁 Estrutura do Projeto
+
+```plaintext
+├── public/
+├── src/
+│   ├── app/
+│   ├── components/
+│   ├── styles/
+│   └── types/
+├── .gitignore
+├── next.config.ts
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Como Rodar o Projeto Localmente
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Pré-requisitos
 
-## Learn More
+- Node.js (versão 16 ou superior)
+- npm ou yarn
 
-To learn more about Next.js, take a look at the following resources:
+### Passos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+git clone https://github.com/dsg1407/dev-links.git
+cd dev-links
+npm install
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Acesse: http://localhost:3000
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Compatível com **Vercel** e **Netlify**, com suporte nativo ao Next.js.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença **MIT**.
+
+---
+
+## 👤 Autor
+
+**Daniel Santos Gonçalves**  
+🔗 GitHub: https://github.com/dsg1407  
+🌐 Site: https://www.danielsg.dev/
