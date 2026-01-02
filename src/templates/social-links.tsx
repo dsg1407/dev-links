@@ -1,38 +1,23 @@
 import { SocialButton } from '@/components/social-button'
+import { createClient } from '@/prismicio'
 
-const data = [
-  {
-    socialName: 'twitter',
-    url: 'https://twitter.com/dsg1407_',
-  },
-  {
-    socialName: 'linkedin',
-    url: 'https://www.linkedin.com/in/dsg1407',
-  },
-  {
-    socialName: 'facebook',
-    url: 'https://www.facebook.com/dsg1407',
-  },
-  {
-    socialName: 'threads',
-    url: 'https://www.threads.net/@dsg1407',
-  },
-  {
-    socialName: 'github',
-    url: 'https://github.com/dsg1407',
-  },
-]
+export async function SocialLinks() {
+  const client = createClient()
+  const page = await client.getSingle('link_page')
+  const { social_links } = page.data
 
-export function SocialLinks() {
   return (
     <aside className="p-6 flex gap-4 items-center justify-center">
-      {data.map(social => (
-        <SocialButton
-          key={social.socialName}
-          href={social.url}
-          social={social.socialName}
-        />
-      ))}
+      {social_links.map(
+        social =>
+          social.text && (
+            <SocialButton
+              key={social.key}
+              field={social}
+              social={social.text}
+            />
+          )
+      )}
     </aside>
   )
 }

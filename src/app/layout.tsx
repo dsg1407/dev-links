@@ -9,7 +9,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Dev Links',
+  title: {
+    absolute: 'Dev Links',
+    template: '%s | Dev Links',
+    default: 'Dev Links',
+  },
   description: 'Desafio Rocketseat NextJS- Módulo 01',
 }
 
